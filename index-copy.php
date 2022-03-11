@@ -10,10 +10,17 @@ $dbname = "u432291438_bikegame";
 // $password = "";
 // $dbname = "bike";
 
+//Post
 $name = $_POST["name"];
 $org = $_POST["org"];
 $des = $_POST["des"];
 $email = $_POST["email"];
+
+//Get
+$name = $_GET["name"];
+$org = $_GET["org"];
+$des = $_GET["des"];
+$email = $_GET["email"];
 
 // $name = "name";
 // $org = "org";
