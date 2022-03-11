@@ -1,3 +1,4 @@
+<!-- https://bikedta.herokuapp.com/index-copy.php -->
 <?php
 $servername = "sql555.main-hosting.eu";
 $username = "u432291438_bikeshimar";
@@ -21,7 +22,8 @@ $sql = "INSERT INTO bikedata (name, org, des, email)
 VALUES ($name, $org, $des, $email)";
 
 if ($conn->query($sql) === TRUE) {
-  echo "New record created successfully";
+  $last_id = $conn->insert_id;
+  echo "New record created successfully. Last inserted ID is: " . $last_id;
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
