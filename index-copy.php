@@ -1,4 +1,3 @@
-<!-- https://bikedta.herokuapp.com/index-copy.php -->
 <?php
 $servername = "sql555.main-hosting.eu";
 $username = "u432291438_bikeshimar";
