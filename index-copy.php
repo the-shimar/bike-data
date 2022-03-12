@@ -24,7 +24,7 @@ $email = $_POST["email"];
 // $name = "name";
 // $org = "org";
 // $des = "des";
-// $email = "email"; //test
+// $email = "email"; //test data
 
 
 // Create connection
