@@ -10,16 +10,16 @@ $dbname = "u432291438_bikegame";
 // $dbname = "bike";
 
 //Post
-//$name = $_POST["name"];
-//$org = $_POST["org"];
-//$des = $_POST["des"];
-//$email = $_POST["email"];
+$name = $_POST["name"];
+$org = $_POST["org"];
+$des = $_POST["des"];
+$email = $_POST["email"];
 
 //Get
-$name = $_GET["name"];
-$org = $_GET["org"];
-$des = $_GET["des"];
-$email = $_GET["email"];
+// $name = $_GET["name"];
+// $org = $_GET["org"];
+// $des = $_GET["des"];
+// $email = $_GET["email"];
 
 // $name = "name";
 // $org = "org";
@@ -35,7 +35,7 @@ if ($conn->connect_error) {
 }
 
 $sql = "INSERT INTO bikedata (name, org, des, email, score)
-VALUES ($name, $org, $des, $email, 0)";
+VALUES ('$name', '$org', '$des', '$email', 0)";
 
 if ($conn->query($sql) === TRUE) {
   $last_id = $conn->insert_id;
