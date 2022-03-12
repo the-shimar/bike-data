@@ -10,10 +10,10 @@ $dbname = "u432291438_bikegame";
 // $dbname = "bike";
 
 //Post
-$name = $_POST["name"];
-$org = $_POST["org"];
-$des = $_POST["des"];
-$email = $_POST["email"];
+//$name = $_POST["name"];
+//$org = $_POST["org"];
+//$des = $_POST["des"];
+//$email = $_POST["email"];
 
 //Get
 $name = $_GET["name"];
